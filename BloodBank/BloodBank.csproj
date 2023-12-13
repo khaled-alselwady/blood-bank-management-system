@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0ED2A97A-9AB7-4862-A2CC-726555289B30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BloodBank_WindowsForms_</RootNamespace>
+    <AssemblyName>BloodBank%28WindowsForms%29</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMainMenu\frmAddEditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainMenu\frmAddEditEmployee.Designer.cs">
+      <DependentUpon>frmAddEditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainMenu\frmAdminMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainMenu\frmAdminMainMenu.Designer.cs">
+      <DependentUpon>frmAdminMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainMenu\frmEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainMenu\frmEmployees.Designer.cs">
+      <DependentUpon>frmEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloodStockForms\frmBloodStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodStockForms\frmBloodStock.Designer.cs">
+      <DependentUpon>frmBloodStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloodTransferForms\frmBloodTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodTransferForms\frmBloodTransfer.Designer.cs">
+      <DependentUpon>frmBloodTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BloodTransferForms\frmViewTransferHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodTransferForms\frmViewTransferHistory.Designer.cs">
+      <DependentUpon>frmViewTransferHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsChangeHeaderColorOfDataGridView.cs" />
+    <Compile Include="clsDragForm.cs" />
+    <Compile Include="clsOpenChildForm.cs" />
+    <Compile Include="DashboardFroms\frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardFroms\frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonateForms\frmDonate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonateForms\frmDonate.Designer.cs">
+      <DependentUpon>frmDonate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorsForms\frmAddEditDonor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorsForms\frmAddEditDonor.Designer.cs">
+      <DependentUpon>frmAddEditDonor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonorsForms\frmDonors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonorsForms\frmDonors.Designer.cs">
+      <DependentUpon>frmDonors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreenForms\frmLoginAsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginScreenForms\frmLoginAsAdmin.Designer.cs">
+      <DependentUpon>frmLoginAsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreenForms\frmLoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginScreenForms\frmLoginScreen.Designer.cs">
+      <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientForms\frmAddEditPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientForms\frmAddEditPatient.Designer.cs">
+      <DependentUpon>frmAddEditPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientForms\frmPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientForms\frmPatients.Designer.cs">
+      <DependentUpon>frmPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminMainMenu\frmAddEditEmployee.resx">
+      <DependentUpon>frmAddEditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainMenu\frmAdminMainMenu.resx">
+      <DependentUpon>frmAdminMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMainMenu\frmEmployees.resx">
+      <DependentUpon>frmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloodStockForms\frmBloodStock.resx">
+      <DependentUpon>frmBloodStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloodTransferForms\frmBloodTransfer.resx">
+      <DependentUpon>frmBloodTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloodTransferForms\frmViewTransferHistory.resx">
+      <DependentUpon>frmViewTransferHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardFroms\frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonateForms\frmDonate.resx">
+      <DependentUpon>frmDonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorsForms\frmAddEditDonor.resx">
+      <DependentUpon>frmAddEditDonor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonorsForms\frmDonors.resx">
+      <DependentUpon>frmDonors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginScreenForms\frmLoginAsAdmin.resx">
+      <DependentUpon>frmLoginAsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginScreenForms\frmLoginScreen.resx">
+      <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientForms\frmAddEditPatient.resx">
+      <DependentUpon>frmAddEditPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientForms\frmPatients.resx">
+      <DependentUpon>frmPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Donors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BloodBank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BloodBank_Business\BloodBank_Business.csproj">
+      <Project>{4880f0e7-370f-4433-9e07-32ccda207094}</Project>
+      <Name>BloodBank_Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
